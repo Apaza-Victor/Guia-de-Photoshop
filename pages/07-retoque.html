@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cap. 07 — Retoque y restauración · PixelMaestro — Guía de Photoshop</title>
+<meta name="description" content="Tampón, Pincel corrector, Rellenar según el contenido y frecuencia de separación.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230E0F12%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%2300E5C7%22 font-family=%22sans-serif%22>P</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="topbar__main">
+    <a class="brand" href="../index.html" style="text-decoration:none">
+      <i class="bi bi-layers-half"></i>
+      <span>PixelMaestro<small>Guía de Photoshop</small></span>
+    </a>
+  </div>
+  <nav class="topbar-nav" aria-label="Navegación de la guía"><a href="../index.html">Inicio</a><div class="topbar-dd"><button class="topbar-dd__btn" type="button" data-dd-toggle aria-expanded="false" aria-haspopup="true">Módulos <i class="bi bi-chevron-down"></i></button><div class="topbar-dd__menu"><a href="../pages/01-introduccion.html" data-caps="01,02"><span class="n">01–02</span>Fundamentos</a><a href="../pages/03-seleccion.html" data-caps="03,04,05"><span class="n">03–05</span>Selección y capas</a><a href="../pages/06-color.html" data-caps="06,07"><span class="n">06–07</span>Color y retoque</a><a href="../pages/08-pinceles-texto.html" data-caps="08,09"><span class="n">08–09</span>Creación y efectos</a><a href="../pages/10-composicion.html" data-caps="10,11"><span class="n">10–11</span>Composición avanzada</a><a href="../pages/12-exportacion.html" data-caps="12"><span class="n">12</span>Nivel experto</a></div></div><a href="../pages/glosario.html">Glosario</a><a href="../pages/comandos.html">Comandos</a><a href="../pages/iconos-modo.html">Modos</a><a href="../pages/recursos.html">Recursos</a></nav>
+  <div class="topbar-actions">
+    <button class="theme-toggle icon-btn" type="button" data-theme-toggle aria-label="Cambiar a modo claro" aria-pressed="false"><i class="bi bi-sun"></i><i class="bi bi-moon"></i></button>
+    <button class="topbar-search icon-btn" data-search-open aria-label="Buscar en la guía"><i class="bi bi-search"></i></button>
+  </div>
+</header>
+
+<div class="search-overlay" id="search-overlay" aria-hidden="true">
+  <div class="search-overlay__box">
+    <div class="search-overlay__field">
+      <i class="bi bi-search"></i>
+      <input type="search" id="search-input" placeholder="Buscar capítulos, glosario y comandos…" autocomplete="off">
+      <button class="search-overlay__close" data-search-close aria-label="Cerrar búsqueda"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="search-overlay__results" id="search-results"></ul>
+    <p class="search-overlay__empty" id="search-empty">Escribe para buscar capítulos, conceptos, glosario y comandos…</p>
+    <p class="search-overlay__hint">Teclas: &#8593; &#8595; navegar · Enter abrir · Esc cerrar</p>
+  </div>
+</div>
+
+<div class="app-shell">
+<div class="main-col">
+<main id="contenido">
+
+<header class="chapter-header">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Inicio</a><span class="sep">/</span>
+      <span>Capítulo 07</span>
+    </div>
+    <div class="chapter-header__top">
+      <div class="chapter-header__icon"><i class="bi bi-magic"></i></div>
+      <div>
+        <span class="mono" style="color:var(--text-faint); font-size:.8rem;">CAPÍTULO 07 DE 12</span>
+        <h1 class="h-xl" style="margin-top:4px;">Retoque y restauración</h1>
+        <div class="chapter-header__meta">
+          <span class="pill">Intermedio</span>
+          <span class="pill"><i class="bi bi-clock"></i> 60 min</span>
+        </div>
+      </div>
+    </div>
+    <p class="lead">Tampón, Pincel corrector, Rellenar según el contenido y frecuencia de separación.</p>
+
+    <div class="chapter-objectives">
+      <h4>Lo que vas a aprender</h4>
+      <ul><li><i class="bi bi-check2"></i><span>Elegir la herramienta de retoque correcta según el caso.</span></li><li><i class="bi bi-check2"></i><span>Eliminar objetos e imperfecciones de forma creíble.</span></li><li><i class="bi bi-check2"></i><span>Restaurar fotografías antiguas dañadas.</span></li><li><i class="bi bi-check2"></i><span>Aplicar una limpieza de piel profesional sin perder textura.</span></li></ul>
+    </div>
+  </div>
+</header>
+
+<div class="chapter-body">
+  <div class="container">
+    <h2><span class="num">01</span>Pincel corrector puntual, Pincel corrector y Tampón de clonar</h2><p>El <strong>Pincel corrector puntual</strong> (<kbd>J</kbd>) es el más rápido: un clic sobre una imperfección la elimina analizando el entorno automáticamente. Ideal para granos, manchas pequeñas.</p><p>El <strong>Pincel corrector</strong> requiere definir un origen (<kbd>Alt/Option + clic</kbd>) y luego pintar: mezcla la textura del origen con la iluminación del destino. El <strong>Tampón de clonar</strong> (<kbd>S</kbd>) hace lo mismo pero sin mezclar tonos, clonando de forma literal.</p><h2><span class="num">02</span>Rellenar según el contenido (Content-Aware Fill)</h2><p>Selecciona el área a eliminar y usa <code>Edición &gt; Rellenar &gt; Según el contenido</code>, o el panel dedicado (<code>Edición &gt; Rellenar según el contenido</code>) para controlar manualmente qué zonas usa Photoshop como referencia. Excelente para quitar objetos grandes de fondos con patrones.</p><h2><span class="num">03</span>Frecuencia de separación (piel profesional)</h2><p>Técnica estándar en retoque de belleza: separa la imagen en una capa de <strong>color/tono bajo</strong> (frecuencias bajas, desenfocada) y una capa de <strong>textura</strong> (frecuencias altas). Así puedes corregir manchas de color sin tocar poros ni textura, y viceversa.</p><ul><li>Duplica la capa dos veces: "Baja frecuencia" y "Alta frecuencia".</li><li>Aplica Desenfoque gaussiano fuerte en la capa de baja frecuencia.</li><li>En la capa de alta frecuencia usa "Aplicar imagen" para restar la baja frecuencia y cambia su modo de fusión a "Luz lineal".</li><li>Retoca el color en la capa baja con el Pincel corrector, y la textura en la alta con el Tampón, con opacidad baja.</li></ul><h2><span class="num">04</span>Restauración de fotos antiguas</h2><p>Combina Pincel corrector puntual para rasgaduras finas, Tampón de clonar para zonas grandes perdidas y capas de ajuste de Curvas/Balance de color para recuperar el color desvanecido. El filtro <strong>Neural Filters &gt; Colorizar fotografías</strong> puede dar un punto de partida de color automático sobre fotos en blanco y negro.</p>
+
+    <div class="table-scroll"><table class="shortcuts">
+<caption>Atajos de teclado clave</caption>
+<thead><tr><th>Acción</th><th>Windows</th><th>Mac</th></tr></thead>
+<tbody><tr><td>Pincel corrector puntual</td><td class="mono">J</td><td class="mono">J</td></tr>
+<tr><td>Tampón de clonar</td><td class="mono">S</td><td class="mono">S</td></tr>
+<tr><td>Definir punto de origen</td><td class="mono">Alt + clic</td><td class="mono">Option + clic</td></tr>
+<tr><td>Rellenar según el contenido</td><td class="mono">Mayús + F5</td><td class="mono">Shift + F5</td></tr>
+<tr><td>Aumentar/disminuir tamaño de pincel</td><td class="mono">[ / ]</td><td class="mono">[ / ]</td></tr></tbody></table></div>
+
+    <div class="callout callout--tip"><i class="bi bi-lightbulb"></i><div><h5>Retoca en una capa nueva</h5><p>Activa "Muestra: Todas las capas" en la barra de opciones del Pincel corrector y trabaja en una capa vacía encima: mantienes el original intacto y puedes bajar la opacidad del retoque.</p></div></div><div class="callout callout--warn"><i class="bi bi-exclamation-triangle"></i><div><h5>No te pases con la piel</h5><p>Un retoque de piel excesivo elimina toda la textura y se ve plástico. Usa opacidad de pincel del 30-50% y revisa a 100% de zoom.</p></div></div>
+
+    <div class="callout callout--exercise"><i class="bi bi-flag"></i><div><h5>Ejercicio: limpieza de retrato</h5><p><ol style='margin:10px 0 0; padding-left:1.1rem; display:grid; gap:6px;'><li>Abre un retrato con algunas imperfecciones visibles en la piel.</li><li>Crea una capa vacía por encima y usa el Pincel corrector puntual con "Muestra: Todas las capas" para eliminar granos e imperfecciones puntuales.</li><li>Aplica frecuencia de separación básica para suavizar el tono de piel sin perder textura.</li><li>Compara antes/después alternando la visibilidad de las capas.</li></ol></p></div></div>
+
+    <div class="chapter-pager">
+      <a class="pager-link prev" href="06-color.html">
+        <span><i class="bi bi-arrow-left"></i> Capítulo 06</span>
+        <strong>Color, tono y ajustes</strong>
+      </a>
+      <a class="pager-link next" href="08-pinceles-texto.html">
+        <span>Capítulo 08 <i class="bi bi-arrow-right"></i></span>
+        <strong>Pinceles, pintura y texto</strong>
+      </a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span data-year></span> PixelMaestro — Guía independiente para aprender Photoshop. No afiliada a Adobe.</p>
+    <nav class="footer-links">
+      <a href="../index.html">Inicio</a>
+      <a href="../pages/01-introduccion.html">Empezar guía</a>
+      <a href="../pages/recursos.html">Recursos</a>
+    </nav>
+  </div>
+</footer>
+
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/animations.js"></script>
+
+<script src="../js/search.js"></script>
+
+</body>
+</html>

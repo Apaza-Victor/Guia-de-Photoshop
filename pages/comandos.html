@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Comandos y atajos de teclado · PixelMaestro — Guía de Photoshop</title>
+<meta name="description" content="Todas las combinaciones de teclas de Photoshop organizadas por categorías: archivo, edición, selección, capas, ajustes de color, vista y herramientas.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230E0F12%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%2300E5C7%22 font-family=%22sans-serif%22>P</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="topbar__main">
+    <a class="brand" href="../index.html" style="text-decoration:none">
+      <i class="bi bi-layers-half"></i>
+      <span>PixelMaestro<small>Guía de Photoshop</small></span>
+    </a>
+  </div>
+  <nav class="topbar-nav" aria-label="Navegación de la guía"><a href="../index.html">Inicio</a><div class="topbar-dd"><button class="topbar-dd__btn" type="button" data-dd-toggle aria-expanded="false" aria-haspopup="true">Módulos <i class="bi bi-chevron-down"></i></button><div class="topbar-dd__menu"><a href="../pages/01-introduccion.html" data-caps="01,02"><span class="n">01–02</span>Fundamentos</a><a href="../pages/03-seleccion.html" data-caps="03,04,05"><span class="n">03–05</span>Selección y capas</a><a href="../pages/06-color.html" data-caps="06,07"><span class="n">06–07</span>Color y retoque</a><a href="../pages/08-pinceles-texto.html" data-caps="08,09"><span class="n">08–09</span>Creación y efectos</a><a href="../pages/10-composicion.html" data-caps="10,11"><span class="n">10–11</span>Composición avanzada</a><a href="../pages/12-exportacion.html" data-caps="12"><span class="n">12</span>Nivel experto</a></div></div><a href="../pages/glosario.html">Glosario</a><a href="../pages/comandos.html">Comandos</a><a href="../pages/iconos-modo.html">Modos</a><a href="../pages/recursos.html">Recursos</a></nav>
+  <div class="topbar-actions">
+    <button class="theme-toggle icon-btn" type="button" data-theme-toggle aria-label="Cambiar a modo claro" aria-pressed="false"><i class="bi bi-sun"></i><i class="bi bi-moon"></i></button>
+    <button class="topbar-search icon-btn" data-search-open aria-label="Buscar en la guía"><i class="bi bi-search"></i></button>
+  </div>
+</header>
+
+<div class="search-overlay" id="search-overlay" aria-hidden="true">
+  <div class="search-overlay__box">
+    <div class="search-overlay__field">
+      <i class="bi bi-search"></i>
+      <input type="search" id="search-input" placeholder="Buscar capítulos, glosario y comandos…" autocomplete="off">
+      <button class="search-overlay__close" data-search-close aria-label="Cerrar búsqueda"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="search-overlay__results" id="search-results"></ul>
+    <p class="search-overlay__empty" id="search-empty">Escribe para buscar capítulos, conceptos, glosario y comandos…</p>
+    <p class="search-overlay__hint">Teclas: &#8593; &#8595; navegar · Enter abrir · Esc cerrar</p>
+  </div>
+</div>
+
+<div class="app-shell">
+<div class="main-col">
+<main id="contenido">
+
+<header class="chapter-header">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Inicio</a><span class="sep">/</span>
+      <span>Comandos</span>
+    </div>
+    <div class="chapter-header__top">
+      <div class="chapter-header__icon"><i class="bi bi-keyboard"></i></div>
+      <div>
+        <span class="mono" style="color:var(--text-faint); font-size:.8rem;">REFERENCIA RÁPIDA</span>
+        <h1 class="h-xl" style="margin-top:4px;">Comandos y atajos de teclado</h1>
+        <div class="chapter-header__meta">
+          <span class="pill">Referencia</span>
+          <span class="pill"><i class="bi bi-keyboard"></i> 100+ atajos</span>
+        </div>
+      </div>
+    </div>
+    <p class="lead">Las combinaciones de teclas más útiles de Photoshop organizadas por categorías. Domina las que repites a diario y notarás la diferencia de velocidad de inmediato.</p>
+    <div class="chapter-objectives">
+      <h4>Cómo usar esta página</h4>
+      <ul><li><i class="bi bi-check2"></i><span>Las tablas muestran primero Windows y después macOS.</span></li><li><i class="bi bi-check2"></i><span><kbd>Ctrl</kbd> equivale a <kbd>Cmd</kbd> en Mac; <kbd>Alt</kbd> equivale a <kbd>Option</kbd>.</span></li><li><i class="bi bi-check2"></i><span>Los atajos funcionan con la disposición de teclado en español.</span></li></ul>
+    </div>
+  </div>
+</header>
+
+<div class="chapter-body">
+  <div class="container">
+
+    <h2 id="archivo"><span class="num">01</span>Archivo</h2>
+    <p>Gestión del documento: crear, abrir, guardar y exportar.</p>
+    <div class="table-scroll">
+      <table class="shortcuts">
+        <caption>Menú Archivo</caption>
+        <thead><tr><th>Acción</th><th>Windows</th><th>macOS</th></tr></thead>
+        <tbody>
+          <tr><td>Nuevo documento</td><td><kbd>Ctrl</kbd>+<kbd>N</kbd></td><td><kbd>Cmd</kbd>+<kbd>N</kbd></td></tr>
+          <tr><td>Abrir</td><td><kbd>Ctrl</kbd>+<kbd>O</kbd></td><td><kbd>Cmd</kbd>+<kbd>O</kbd></td></tr>
+          <tr><td>Abrir como objeto inteligente</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>O</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>O</kbd></td></tr>
+          <tr><td>Cerrar documento</td><td><kbd>Ctrl</kbd>+<kbd>W</kbd></td><td><kbd>Cmd</kbd>+<kbd>W</kbd></td></tr>
+          <tr><td>Cerrar todos</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>W</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>W</kbd></td></tr>
+          <tr><td>Guardar</td><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td><kbd>Cmd</kbd>+<kbd>S</kbd></td></tr>
+          <tr><td>Guardar como</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td></tr>
+          <tr><td>Guardar una copia</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>S</kbd></td></tr>
+          <tr><td>Guardar para web</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td></tr>
+          <tr><td>Exportar como</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd></td></tr>
+          <tr><td>Imprimir</td><td><kbd>Ctrl</kbd>+<kbd>P</kbd></td><td><kbd>Cmd</kbd>+<kbd>P</kbd></td></tr>
+          <tr><td>Preferencias</td><td><kbd>Ctrl</kbd>+<kbd>K</kbd></td><td><kbd>Cmd</kbd>+<kbd>K</kbd></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="edicion"><span class="num">02</span>Edición</h2>
+    <p>Deshacer, portapapeles, transformaciones y relleno.</p>
+    <div class="table-scroll">
+      <table class="shortcuts">
+        <caption>Menú Edición</caption>
+        <thead><tr><th>Acción</th><th>Windows</th><th>macOS</th></tr></thead>
+        <tbody>
+          <tr><td>Deshacer</td><td><kbd>Ctrl</kbd>+<kbd>Z</kbd></td><td><kbd>Cmd</kbd>+<kbd>Z</kbd></td></tr>
+          <tr><td>Rehacer</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd></td></tr>
+          <tr><td>Cortar</td><td><kbd>Ctrl</kbd>+<kbd>X</kbd></td><td><kbd>Cmd</kbd>+<kbd>X</kbd></td></tr>
+          <tr><td>Copiar</td><td><kbd>Ctrl</kbd>+<kbd>C</kbd></td><td><kbd>Cmd</kbd>+<kbd>C</kbd></td></tr>
+          <tr><td>Copiar combinado (todas las capas)</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd></td></tr>
+          <tr><td>Pegar</td><td><kbd>Ctrl</kbd>+<kbd>V</kbd></td><td><kbd>Cmd</kbd>+<kbd>V</kbd></td></tr>
+          <tr><td>Pegar en el lugar</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd></td></tr>
+          <tr><td>Relleno</td><td><kbd>Shift</kbd>+<kbd>F5</kbd></td><td><kbd>Shift</kbd>+<kbd>F5</kbd></td></tr>
+          <tr><td>Rellenar con color frontal</td><td><kbd>Alt</kbd>+<kbd>Backspace</kbd></td><td><kbd>Opt</kbd>+<kbd>Delete</kbd></td></tr>
+          <tr><td>Rellenar con color de fondo</td><td><kbd>Ctrl</kbd>+<kbd>Backspace</kbd></td><td><kbd>Cmd</kbd>+<kbd>Delete</kbd></td></tr>
+          <tr><td>Transformación libre</td><td><kbd>Ctrl</kbd>+<kbd>T</kbd></td><td><kbd>Cmd</kbd>+<kbd>T</kbd></td></tr>
+          <tr><td>Transformación de nuevo</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd></td></tr>
+          <tr><td>Transformar de nuevo con duplicado</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="seleccion"><span class="num">03</span>Selección</h2>
+    <p>Crear, ajustar y transformar selecciones.</p>
+    <div class="table-scroll">
+      <table class="shortcuts">
+        <caption>Menú Selección</caption>
+        <thead><tr><th>Acción</th><th>Windows</th><th>macOS</th></tr></thead>
+        <tbody>
+          <tr><td>Seleccionar todo</td><td><kbd>Ctrl</kbd>+<kbd>A</kbd></td><td><kbd>Cmd</kbd>+<kbd>A</kbd></td></tr>
+          <tr><td>Deseleccionar</td><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td><td><kbd>Cmd</kbd>+<kbd>D</kbd></td></tr>
+          <tr><td>Volver a seleccionar</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></td></tr>
+          <tr><td>Invertir selección</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd></td></tr>
+          <tr><td>Seleccionar y enmascarar</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>R</kbd></td></tr>
+          <tr><td>Calar (desvanecer) selección</td><td><kbd>Shift</kbd>+<kbd>F6</kbd></td><td><kbd>Shift</kbd>+<kbd>F6</kbd></td></tr>
+          <tr><td>Guardar selección como canal</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></td></tr>
+          <tr><td>Seleccionar todo en capa de contorno</td><td><kbd>Ctrl</kbd>+clic en miniatura</td><td><kbd>Cmd</kbd>+clic en miniatura</td></tr>
+          <tr><td>Añadir a selección activa</td><td><kbd>Shift</kbd>+clic con herramienta</td><td><kbd>Shift</kbd>+clic con herramienta</td></tr>
+          <tr><td>Restar de la selección</td><td><kbd>Alt</kbd>+clic con herramienta</td><td><kbd>Opt</kbd>+clic con herramienta</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="capas"><span class="num">04</span>Capas</h2>
+    <p>El panel de capas es donde más tiempo se pasa: memoriza estos atajos.</p>
+    <div class="table-scroll">
+      <table class="shortcuts">
+        <caption>Menú Capa</caption>
+        <thead><tr><th>Acción</th><th>Windows</th><th>macOS</th></tr></thead>
+        <tbody>
+          <tr><td>Nueva capa</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></td></tr>
+          <tr><td>Capa vía copiar</td><td><kbd>Ctrl</kbd>+<kbd>J</kbd></td><td><kbd>Cmd</kbd>+<kbd>J</kbd></td></tr>
+          <tr><td>Capa vía cortar</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></td></tr>
+          <tr><td>Agrupar capas</td><td><kbd>Ctrl</kbd>+<kbd>G</kbd></td><td><kbd>Cmd</kbd>+<kbd>G</kbd></td></tr>
+          <tr><td>Desagrupar</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd></td></tr>
+          <tr><td>Fusionar capas seleccionadas</td><td><kbd>Ctrl</kbd>+<kbd>E</kbd></td><td><kbd>Cmd</kbd>+<kbd>E</kbd></td></tr>
+          <tr><td>Acoplar imagen</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd></td></tr>
+          <tr><td>Crear máscara de recorte</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>G</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>G</kbd></td></tr>
+          <tr><td>Duplicar capa</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>J</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>J</kbd></td></tr>
+          <tr><td>Buscar capa</td><td><kbd>Ctrl</kbd>+<kbd>F</kbd> (panel capas)</td><td><kbd>Cmd</kbd>+<kbd>F</kbd> (panel capas)</td></tr>
+          <tr><td>Mostrar solo la capa activa</td><td><kbd>Alt</kbd>+clic en icono ojo</td><td><kbd>Opt</kbd>+clic en icono ojo</td></tr>
+          <tr><td>Seleccionar capa inferior/superior</td><td><kbd>Alt</kbd>+<kbd>[</kbd> / <kbd>]</kbd></td><td><kbd>Opt</kbd>+<kbd>[</kbd> / <kbd>]</kbd></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="color"><span class="num">05</span>Ajustes de color</h2>
+    <p>Corrección de tono, luz y color. Aplica estos ajustes como capas de ajuste para trabajar sin destrucción.</p>
+    <div class="table-scroll">
+      <table class="shortcuts">
+        <caption>Menú Imagen &gt; Ajustes</caption>
+        <thead><tr><th>Acción</th><th>Windows</th><th>macOS</th></tr></thead>
+        <tbody>
+          <tr><td>Niveles</td><td><kbd>Ctrl</kbd>+<kbd>L</kbd></td><td><kbd>Cmd</kbd>+<kbd>L</kbd></td></tr>
+          <tr><td>Curvas</td><td><kbd>Ctrl</kbd>+<kbd>M</kbd></td><td><kbd>Cmd</kbd>+<kbd>M</kbd></td></tr>
+          <tr><td>Tono / Saturación</td><td><kbd>Ctrl</kbd>+<kbd>U</kbd></td><td><kbd>Cmd</kbd>+<kbd>U</kbd></td></tr>
+          <tr><td>Desaturar</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd></td></tr>
+          <tr><td>Balance de color</td><td><kbd>Ctrl</kbd>+<kbd>B</kbd></td><td><kbd>Cmd</kbd>+<kbd>B</kbd></td></tr>
+          <tr><td>Invertir</td><td><kbd>Ctrl</kbd>+<kbd>I</kbd></td><td><kbd>Cmd</kbd>+<kbd>I</kbd></td></tr>
+          <tr><td>Blanco y negro</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd></td></tr>
+          <tr><td>Auto-color</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd></td></tr>
+          <tr><td>Auto-tono</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd></td></tr>
+          <tr><td>Auto-contraste</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="vista"><span class="num">06</span>Vista y navegación</h2>
+    <p>Zoom, modos de pantalla y ayudas visuales. La navegación fluida acelera cualquier flujo.</p>
+    <div class="table-scroll">
+      <table class="shortcuts">
+        <caption>Menú Ver</caption>
+        <thead><tr><th>Acción</th><th>Windows</th><th>macOS</th></tr></thead>
+        <tbody>
+          <tr><td>Acercar</td><td><kbd>Ctrl</kbd>+<kbd>+</kbd></td><td><kbd>Cmd</kbd>+<kbd>+</kbd></td></tr>
+          <tr><td>Alejar</td><td><kbd>Ctrl</kbd>+<kbd>-</kbd></td><td><kbd>Cmd</kbd>+<kbd>-</kbd></td></tr>
+          <tr><td>Ajustar en pantalla</td><td><kbd>Ctrl</kbd>+<kbd>0</kbd></td><td><kbd>Cmd</kbd>+<kbd>0</kbd></td></tr>
+          <tr><td>Tamaño real (100 %)</td><td><kbd>Ctrl</kbd>+<kbd>1</kbd></td><td><kbd>Cmd</kbd>+<kbd>1</kbd></td></tr>
+          <tr><td>Zoom con clic mantenido (herramienta Mano/Zoom)</td><td><kbd>Alt</kbd>+clic</td><td><kbd>Opt</kbd>+clic</td></tr>
+          <tr><td>Mostrar / ocultar reglas</td><td><kbd>Ctrl</kbd>+<kbd>R</kbd></td><td><kbd>Cmd</kbd>+<kbd>R</kbd></td></tr>
+          <tr><td>Mostrar / ocultar guías</td><td><kbd>Ctrl</kbd>+<kbd>;</kbd></td><td><kbd>Cmd</kbd>+<kbd>;</kbd></td></tr>
+          <tr><td>Bloquear guías</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>;</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>;</kbd></td></tr>
+          <tr><td>Mostrar / ocultar cuadrícula</td><td><kbd>Ctrl</kbd>+<kbd>'</kbd></td><td><kbd>Cmd</kbd>+<kbd>'</kbd></td></tr>
+          <tr><td>Modos de pantalla (estándar / con menús / completa)</td><td><kbd>F</kbd></td><td><kbd>F</kbd></td></tr>
+          <tr><td>Ocultar / mostrar paneles (Modo de pantalla completa)</td><td><kbd>Tab</kbd></td><td><kbd>Tab</kbd></td></tr>
+          <tr><td>Cambiar entre ventanas de documento</td><td><kbd>Ctrl</kbd>+<kbd>Tab</kbd></td><td><kbd>Cmd</kbd>+<kbd>Tab</kbd></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="herramientas"><span class="num">07</span>Herramientas por tecla</h2>
+    <p>Pulsa la letra para seleccionar la herramienta. Mantén <kbd>Shift</kbd> para alternar entre las variantes del grupo.</p>
+    <div class="table-scroll">
+      <table class="shortcuts">
+        <caption>Teclas de herramientas</caption>
+        <thead><tr><th>Tecla</th><th>Herramienta</th><th>Tecla</th><th>Herramienta</th></tr></thead>
+        <tbody>
+          <tr><td><kbd>V</kbd></td><td>Mover</td><td><kbd>M</kbd></td><td>Marco (selección rectangular / elíptica)</td></tr>
+          <tr><td><kbd>L</kbd></td><td>Lazo</td><td><kbd>W</kbd></td><td>Varita mágica / Selección rápida</td></tr>
+          <tr><td><kbd>C</kbd></td><td>Recortar</td><td><kbd>I</kbd></td><td>Cuentagotas</td></tr>
+          <tr><td><kbd>B</kbd></td><td>Pincel</td><td><kbd>E</kbd></td><td>Borrador</td></tr>
+          <tr><td><kbd>S</kbd></td><td>Tampón de clonar</td><td><kbd>J</kbd></td><td>Pincel corrector</td></tr>
+          <tr><td><kbd>G</kbd></td><td>Degradado / Bote de pintura</td><td><kbd>O</kbd></td><td>Sobreexponer / Subexponer</td></tr>
+          <tr><td><kbd>P</kbd></td><td>Pluma</td><td><kbd>T</kbd></td><td>Texto</td></tr>
+          <tr><td><kbd>A</kbd></td><td>Selección de trazado</td><td><kbd>U</kbd></td><td>Formas (rectángulo, elipse…)</td></tr>
+          <tr><td><kbd>H</kbd></td><td>Mano</td><td><kbd>Z</kbd></td><td>Zoom</td></tr>
+          <tr><td><kbd>R</kbd></td><td>Rotar vista</td><td><kbd>K</kbd></td><td>Slice (porciones)</td></tr>
+          <tr><td><kbd>X</kbd></td><td>Intercambiar colores frontal / fondo</td><td><kbd>D</kbd></td><td>Colores por defecto (blanco y negro)</td></tr>
+          <tr><td><kbd>Q</kbd></td><td>Máscara rápida</td><td><kbd>F</kbd></td><td>Modos de pantalla</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="pro"><span class="num">08</span>Combos de nivel pro</h2>
+    <p>Combinaciones avanzadas que ahorran minutos en tareas repetitivas.</p>
+    <div class="table-scroll">
+      <table class="shortcuts">
+        <caption>Combinaciones avanzadas</caption>
+        <thead><tr><th>Acción</th><th>Windows</th><th>macOS</th></tr></thead>
+        <tbody>
+          <tr><td>Fusión de copia visible (todo en una capa)</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd></td></tr>
+          <tr><td>Pegar dentro de la selección</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd></td></tr>
+          <tr><td>Cambiar opacidad de la capa activa</td><td><kbd>0</kbd>–<kbd>9</kbd></td><td><kbd>0</kbd>–<kbd>9</kbd></td></tr>
+          <tr><td>Mover capa 1 px / 10 px</td><td><kbd>Flechas</kbd> / <kbd>Shift</kbd>+<kbd>Flechas</kbd></td><td><kbd>Flechas</kbd> / <kbd>Shift</kbd>+<kbd>Flechas</kbd></td></tr>
+          <tr><td>Duplicar capa arrastrando</td><td><kbd>Alt</kbd>+arrastrar</td><td><kbd>Opt</kbd>+arrastrar</td></tr>
+          <tr><td>Mano temporal (en cualquier herramienta)</td><td><kbd>Espacio</kbd></td><td><kbd>Espacio</kbd></td></tr>
+          <tr><td>Zoom temporal (acercar / alejar)</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+arrastrar</td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+arrastrar</td></tr>
+          <tr><td>Cambiar entre documentos abiertos</td><td><kbd>Ctrl</kbd>+<kbd>Tab</kbd></td><td><kbd>Ctrl</kbd>+<kbd>Tab</kbd></td></tr>
+          <tr><td>Retroceder en el historial</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Z</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>Z</kbd></td></tr>
+          <tr><td>Avanzar en el historial</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd></td><td><kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd></td></tr>
+          <tr><td>Editor de métodos abreviados</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></td><td><kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="tips"><span class="num">09</span>Tips y trucos para diseñar más rápido</h2>
+    <p>Pequeños hábitos que convierten tu flujo de trabajo en algo mucho más ágil.</p>
+    <div class="tips-grid">
+      <div class="tip-card"><i class="bi bi-journal"></i><div><h4>Guarda sin acoplar</h4><p>Guarda tu PSD con <kbd>Ctrl</kbd>+<kbd>S</kbd> y exporta una copia con <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>: nunca pierdas capas.</p></div></div>
+      <div class="tip-card"><i class="bi bi-layers"></i><div><h4>Edición no destructiva</h4><p>Usa capas de ajuste, objetos inteligentes y máscaras en lugar de destruir los píxeles originales.</p></div></div>
+      <div class="tip-card"><i class="bi bi-copy"></i><div><h4>Duplica en un movimiento</h4><p>Pulsa <kbd>Ctrl</kbd>+<kbd>J</kbd> para duplicar la capa y mantén <kbd>Alt</kbd>+arrastrar para duplicar y mover a la vez.</p></div></div>
+      <div class="tip-card"><i class="bi bi-zoom-in"></i><div><h4>Navega sin tocar el ratón</h4><p>Mantén <kbd>Espacio</kbd> para mover el lienzo, <kbd>Ctrl</kbd>+<kbd>0</kbd> para ajustar a pantalla y <kbd>Ctrl</kbd>+<kbd>1</kbd> para el 100 %.</p></div></div>
+      <div class="tip-card"><i class="bi bi-brush"></i><div><h4>Domina el pincel</h4><p>Cambia el tamaño con <kbd>[</kbd> / <kbd>]</kbd>, la dureza con <kbd>Shift</kbd>+<kbd>[</kbd> / <kbd>]</kbd> y la opacidad con los números <kbd>0</kbd>–<kbd>9</kbd>.</p></div></div>
+      <div class="tip-card"><i class="bi bi-stars"></i><div><h4>Seleccionar sujeto</h4><p>Un clic en <em>Seleccionar sujeto</em> recorta el protagonista y luego púlelo en <em>Seleccionar y enmascarar</em> (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd>).</p></div></div>
+      <div class="tip-card"><i class="bi bi-collection"></i><div><h4>Organiza con grupos</h4><p>Agrupa con <kbd>Ctrl</kbd>+<kbd>G</kbd>, renombra y usa colores de capa: un documento ordenado se edita el doble de rápido.</p></div></div>
+      <div class="tip-card"><i class="bi bi-play-circle"></i><div><h4>Crea acciones</h4><p>Graba acciones para tareas repetitivas (redimensionar, marca de agua, exportar) y asócialas a teclas o a lotes.</p></div></div>
+      <div class="tip-card"><i class="bi bi-keyboard"></i><div><h4>Personaliza atajos</h4><p>En <em>Edición &gt; Métodos abreviados de teclado</em> (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>) asigna una tecla a lo que repites cada día.</p></div></div>
+      <div class="tip-card"><i class="bi bi-window"></i><div><h4>Plantillas de inicio</h4><p>Guarda documentos, estilos y ajustes preestablecidos para redes sociales: menos configuración, más diseño.</p></div></div>
+      <div class="tip-card"><i class="bi bi-bounding-box"></i><div><h4>Guías y ajustes</h4><p>Activa las guías inteligentes, <kbd>Ctrl</kbd>+<kbd>;</kbd> para las guías y <kbd>Ctrl</kbd>+<kbd>'</kbd> para la cuadrícula: alinea todo en segundos.</p></div></div>
+      <div class="tip-card"><i class="bi bi-clock-history"></i><div><h4>Historial profundo</h4><p>Aumenta los pasos de historial en Preferencias (<kbd>Ctrl</kbd>+<kbd>K</kbd>) y navega hacia atrás con <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Z</kbd>.</p></div></div>
+    </div>
+
+    <div class="callout callout--tip"><i class="bi bi-lightbulb"></i><div><h5>El atajo más importante</h5><p>Memoriza <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> (guardar como) y <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> (acoplar una copia) para exportar sin tocar tu archivo PSD original. Si quieres repasar el porqué, visita la página <a href="12-exportacion.html">de exportación</a>.</p></div></div>
+
+    <div class="chapter-pager">
+      <a class="pager-link prev" href="glosario.html">
+        <span><i class="bi bi-arrow-left"></i> Anterior</span>
+        <strong>Glosario A–Z</strong>
+      </a>
+      <a class="pager-link next" href="iconos-modo.html">
+        <span>Siguiente <i class="bi bi-arrow-right"></i></span>
+        <strong>Iconos de cambio de modo</strong>
+      </a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span data-year></span> PixelMaestro — Guía independiente para aprender Photoshop. No afiliada a Adobe.</p>
+    <nav class="footer-links">
+      <a href="../index.html">Inicio</a>
+      <a href="../pages/01-introduccion.html">Empezar guía</a>
+      <a href="../pages/recursos.html">Recursos</a>
+    </nav>
+  </div>
+</footer>
+
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/animations.js"></script>
+<script src="../js/search.js"></script>
+
+</body>
+</html>

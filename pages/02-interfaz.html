@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cap. 02 — Interfaz y espacio de trabajo · PixelMaestro — Guía de Photoshop</title>
+<meta name="description" content="Barra de herramientas, paneles, espacios de trabajo y navegación eficiente.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230E0F12%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%2300E5C7%22 font-family=%22sans-serif%22>P</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="topbar__main">
+    <a class="brand" href="../index.html" style="text-decoration:none">
+      <i class="bi bi-layers-half"></i>
+      <span>PixelMaestro<small>Guía de Photoshop</small></span>
+    </a>
+  </div>
+  <nav class="topbar-nav" aria-label="Navegación de la guía"><a href="../index.html">Inicio</a><div class="topbar-dd"><button class="topbar-dd__btn" type="button" data-dd-toggle aria-expanded="false" aria-haspopup="true">Módulos <i class="bi bi-chevron-down"></i></button><div class="topbar-dd__menu"><a href="../pages/01-introduccion.html" data-caps="01,02"><span class="n">01–02</span>Fundamentos</a><a href="../pages/03-seleccion.html" data-caps="03,04,05"><span class="n">03–05</span>Selección y capas</a><a href="../pages/06-color.html" data-caps="06,07"><span class="n">06–07</span>Color y retoque</a><a href="../pages/08-pinceles-texto.html" data-caps="08,09"><span class="n">08–09</span>Creación y efectos</a><a href="../pages/10-composicion.html" data-caps="10,11"><span class="n">10–11</span>Composición avanzada</a><a href="../pages/12-exportacion.html" data-caps="12"><span class="n">12</span>Nivel experto</a></div></div><a href="../pages/glosario.html">Glosario</a><a href="../pages/comandos.html">Comandos</a><a href="../pages/iconos-modo.html">Modos</a><a href="../pages/recursos.html">Recursos</a></nav>
+  <div class="topbar-actions">
+    <button class="theme-toggle icon-btn" type="button" data-theme-toggle aria-label="Cambiar a modo claro" aria-pressed="false"><i class="bi bi-sun"></i><i class="bi bi-moon"></i></button>
+    <button class="topbar-search icon-btn" data-search-open aria-label="Buscar en la guía"><i class="bi bi-search"></i></button>
+  </div>
+</header>
+
+<div class="search-overlay" id="search-overlay" aria-hidden="true">
+  <div class="search-overlay__box">
+    <div class="search-overlay__field">
+      <i class="bi bi-search"></i>
+      <input type="search" id="search-input" placeholder="Buscar capítulos, glosario y comandos…" autocomplete="off">
+      <button class="search-overlay__close" data-search-close aria-label="Cerrar búsqueda"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="search-overlay__results" id="search-results"></ul>
+    <p class="search-overlay__empty" id="search-empty">Escribe para buscar capítulos, conceptos, glosario y comandos…</p>
+    <p class="search-overlay__hint">Teclas: &#8593; &#8595; navegar · Enter abrir · Esc cerrar</p>
+  </div>
+</div>
+
+<div class="app-shell">
+<div class="main-col">
+<main id="contenido">
+
+<header class="chapter-header">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Inicio</a><span class="sep">/</span>
+      <span>Capítulo 02</span>
+    </div>
+    <div class="chapter-header__top">
+      <div class="chapter-header__icon"><i class="bi bi-layout-sidebar-inset"></i></div>
+      <div>
+        <span class="mono" style="color:var(--text-faint); font-size:.8rem;">CAPÍTULO 02 DE 12</span>
+        <h1 class="h-xl" style="margin-top:4px;">Interfaz y espacio de trabajo</h1>
+        <div class="chapter-header__meta">
+          <span class="pill">Fundamentos</span>
+          <span class="pill"><i class="bi bi-clock"></i> 40 min</span>
+        </div>
+      </div>
+    </div>
+    <p class="lead">Barra de herramientas, paneles, espacios de trabajo y navegación eficiente.</p>
+
+    <div class="chapter-objectives">
+      <h4>Lo que vas a aprender</h4>
+      <ul><li><i class="bi bi-check2"></i><span>Identificar cada zona de la interfaz de Photoshop.</span></li><li><i class="bi bi-check2"></i><span>Personalizar el espacio de trabajo según tu tipo de proyecto.</span></li><li><i class="bi bi-check2"></i><span>Dominar el zoom, el paneo y la navegación entre documentos.</span></li><li><i class="bi bi-check2"></i><span>Configurar atajos de teclado propios.</span></li></ul>
+    </div>
+  </div>
+</header>
+
+<div class="chapter-body">
+  <div class="container">
+    <h2><span class="num">01</span>Las cuatro zonas principales</h2><p>La interfaz de Photoshop se organiza en cuatro grandes zonas que verás en todas las páginas de esta guía cuando describamos un flujo de trabajo:</p><ul><li><strong>Barra de menús</strong> (arriba): acceso a todos los comandos organizados por categoría.</li><li><strong>Barra de opciones</strong> (justo debajo): cambia según la herramienta activa y controla sus parámetros.</li><li><strong>Caja de herramientas</strong> (lateral izquierdo): iconos agrupados por función; mantén clic para ver variantes.</li><li><strong>Paneles</strong> (lateral derecho): Capas, Ajustes, Canales, Trazados, Historial, Propiedades, etc.</li></ul><h2><span class="num">02</span>Espacios de trabajo (Workspaces)</h2><p>En <code>Ventana &gt; Espacio de trabajo</code> puedes cambiar entre distribuciones predefinidas: <strong>Fotografía</strong>, <strong>Pintura</strong>, <strong>Diseño gráfico y web</strong>, <strong>Movimiento</strong>. Cada una muestra los paneles más relevantes para esa tarea.</p><p>Puedes crear tu propio espacio de trabajo: acomoda los paneles como prefieras y guarda con <code>Espacio de trabajo &gt; Nuevo espacio de trabajo</code>.</p><h2><span class="num">03</span>Navegación: zoom y paneo</h2><p>Aprender a moverte por el lienzo sin fricción ahorra horas a lo largo de un proyecto.</p><ul><li><strong>Zoom:</strong> <kbd>Ctrl/Cmd + "+"</kbd> / <kbd>"-"</kbd>, o mantén <kbd>Alt</kbd> + rueda del mouse.</li><li><strong>Ajustar a pantalla:</strong> <kbd>Ctrl/Cmd + 0</kbd>.</li><li><strong>Zoom al 100%:</strong> <kbd>Ctrl/Cmd + 1</kbd>.</li><li><strong>Paneo (mano):</strong> mantén pulsada la <kbd>barra espaciadora</kbd> y arrastra.</li><li><strong>Herramienta Zoom / Lupa:</strong> <kbd>Z</kbd>. Herramienta Mano: <kbd>H</kbd>.</li></ul><h2><span class="num">04</span>Personaliza tus atajos</h2><p>En <code>Edición &gt; Atajos de teclado</code> puedes reasignar cualquier comando. Es especialmente útil para acciones que uses mucho y que no tengan atajo por defecto, como "Combinar visibles" o filtros específicos.</p>
+
+    <div class="table-scroll"><table class="shortcuts">
+<caption>Atajos de teclado clave</caption>
+<thead><tr><th>Acción</th><th>Windows</th><th>Mac</th></tr></thead>
+<tbody><tr><td>Ajustar imagen a pantalla</td><td class="mono">Ctrl + 0</td><td class="mono">Cmd + 0</td></tr>
+<tr><td>Zoom 100%</td><td class="mono">Ctrl + 1</td><td class="mono">Cmd + 1</td></tr>
+<tr><td>Herramienta Mano (paneo)</td><td class="mono">Espacio (mantener)</td><td class="mono">Espacio (mantener)</td></tr>
+<tr><td>Herramienta Zoom</td><td class="mono">Z</td><td class="mono">Z</td></tr>
+<tr><td>Alternar modo pantalla completa</td><td class="mono">F</td><td class="mono">F</td></tr>
+<tr><td>Mostrar/ocultar paneles</td><td class="mono">Tab</td><td class="mono">Tab</td></tr></tbody></table></div>
+
+    <div class="callout callout--tip"><i class="bi bi-lightbulb"></i><div><h5>Usa Tab para concentrarte</h5><p>Pulsar Tab oculta todos los paneles y te deja solo con el lienzo: ideal para revisar una composición sin distracciones.</p></div></div>
+
+    <div class="callout callout--exercise"><i class="bi bi-flag"></i><div><h5>Ejercicio: arma tu espacio de trabajo</h5><p><ol style='margin:10px 0 0; padding-left:1.1rem; display:grid; gap:6px;'><li>Abre cualquier imagen de práctica.</li><li>Activa los paneles Capas, Historial, Ajustes y Propiedades desde el menú Ventana.</li><li>Acomódalos como prefieras arrastrando sus pestañas.</li><li>Guarda la distribución como un espacio de trabajo personalizado llamado "Mi flujo".</li></ol></p></div></div>
+
+    <div class="chapter-pager">
+      <a class="pager-link prev" href="01-introduccion.html">
+        <span><i class="bi bi-arrow-left"></i> Capítulo 01</span>
+        <strong>Introducción y primeros pasos</strong>
+      </a>
+      <a class="pager-link next" href="03-seleccion.html">
+        <span>Capítulo 03 <i class="bi bi-arrow-right"></i></span>
+        <strong>Herramientas de selección</strong>
+      </a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span data-year></span> PixelMaestro — Guía independiente para aprender Photoshop. No afiliada a Adobe.</p>
+    <nav class="footer-links">
+      <a href="../index.html">Inicio</a>
+      <a href="../pages/01-introduccion.html">Empezar guía</a>
+      <a href="../pages/recursos.html">Recursos</a>
+    </nav>
+  </div>
+</footer>
+
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/animations.js"></script>
+
+<script src="../js/search.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cap. 05 — Máscaras de capa y vectoriales · PixelMaestro — Guía de Photoshop</title>
+<meta name="description" content="Oculta y revela contenido sin borrar nada: la clave de la edición reversible.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230E0F12%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%2300E5C7%22 font-family=%22sans-serif%22>P</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="topbar__main">
+    <a class="brand" href="../index.html" style="text-decoration:none">
+      <i class="bi bi-layers-half"></i>
+      <span>PixelMaestro<small>Guía de Photoshop</small></span>
+    </a>
+  </div>
+  <nav class="topbar-nav" aria-label="Navegación de la guía"><a href="../index.html">Inicio</a><div class="topbar-dd"><button class="topbar-dd__btn" type="button" data-dd-toggle aria-expanded="false" aria-haspopup="true">Módulos <i class="bi bi-chevron-down"></i></button><div class="topbar-dd__menu"><a href="../pages/01-introduccion.html" data-caps="01,02"><span class="n">01–02</span>Fundamentos</a><a href="../pages/03-seleccion.html" data-caps="03,04,05"><span class="n">03–05</span>Selección y capas</a><a href="../pages/06-color.html" data-caps="06,07"><span class="n">06–07</span>Color y retoque</a><a href="../pages/08-pinceles-texto.html" data-caps="08,09"><span class="n">08–09</span>Creación y efectos</a><a href="../pages/10-composicion.html" data-caps="10,11"><span class="n">10–11</span>Composición avanzada</a><a href="../pages/12-exportacion.html" data-caps="12"><span class="n">12</span>Nivel experto</a></div></div><a href="../pages/glosario.html">Glosario</a><a href="../pages/comandos.html">Comandos</a><a href="../pages/iconos-modo.html">Modos</a><a href="../pages/recursos.html">Recursos</a></nav>
+  <div class="topbar-actions">
+    <button class="theme-toggle icon-btn" type="button" data-theme-toggle aria-label="Cambiar a modo claro" aria-pressed="false"><i class="bi bi-sun"></i><i class="bi bi-moon"></i></button>
+    <button class="topbar-search icon-btn" data-search-open aria-label="Buscar en la guía"><i class="bi bi-search"></i></button>
+  </div>
+</header>
+
+<div class="search-overlay" id="search-overlay" aria-hidden="true">
+  <div class="search-overlay__box">
+    <div class="search-overlay__field">
+      <i class="bi bi-search"></i>
+      <input type="search" id="search-input" placeholder="Buscar capítulos, glosario y comandos…" autocomplete="off">
+      <button class="search-overlay__close" data-search-close aria-label="Cerrar búsqueda"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="search-overlay__results" id="search-results"></ul>
+    <p class="search-overlay__empty" id="search-empty">Escribe para buscar capítulos, conceptos, glosario y comandos…</p>
+    <p class="search-overlay__hint">Teclas: &#8593; &#8595; navegar · Enter abrir · Esc cerrar</p>
+  </div>
+</div>
+
+<div class="app-shell">
+<div class="main-col">
+<main id="contenido">
+
+<header class="chapter-header">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Inicio</a><span class="sep">/</span>
+      <span>Capítulo 05</span>
+    </div>
+    <div class="chapter-header__top">
+      <div class="chapter-header__icon"><i class="bi bi-mask"></i></div>
+      <div>
+        <span class="mono" style="color:var(--text-faint); font-size:.8rem;">CAPÍTULO 05 DE 12</span>
+        <h1 class="h-xl" style="margin-top:4px;">Máscaras de capa y vectoriales</h1>
+        <div class="chapter-header__meta">
+          <span class="pill">Intermedio</span>
+          <span class="pill"><i class="bi bi-clock"></i> 50 min</span>
+        </div>
+      </div>
+    </div>
+    <p class="lead">Oculta y revela contenido sin borrar nada: la clave de la edición reversible.</p>
+
+    <div class="chapter-objectives">
+      <h4>Lo que vas a aprender</h4>
+      <ul><li><i class="bi bi-check2"></i><span>Entender la lógica "blanco revela, negro oculta".</span></li><li><i class="bi bi-check2"></i><span>Crear máscaras de capa desde selecciones y a mano alzada.</span></li><li><i class="bi bi-check2"></i><span>Usar máscaras vectoriales y máscaras de recorte.</span></li><li><i class="bi bi-check2"></i><span>Combinar degradados en máscaras para transiciones suaves.</span></li></ul>
+    </div>
+  </div>
+</header>
+
+<div class="chapter-body">
+  <div class="container">
+    <h2><span class="num">01</span>La regla de oro de las máscaras</h2><p>Una máscara de capa es un mapa en escala de grises adosado a una capa: <strong>el blanco muestra</strong> el contenido de la capa, <strong>el negro lo oculta</strong> y los grises intermedios generan transparencia parcial. Nada se borra de forma permanente: siempre puedes repintar la máscara.</p><h2><span class="num">02</span>Crear una máscara</h2><p>Con una selección activa, haz clic en el icono "Añadir máscara de capa" (rectángulo con círculo) en el panel Capas: la selección se convierte automáticamente en blanco (visible) y el resto en negro (oculto).</p><p>Para pintar la máscara a mano, selecciona la miniatura de la máscara y usa el <strong>Pincel</strong> (<kbd>B</kbd>) con color blanco o negro. Alterna rápido con <kbd>X</kbd>.</p><h2><span class="num">03</span>Máscaras vectoriales y de recorte</h2><p>Una <strong>máscara vectorial</strong> usa un trazado (Pluma) en lugar de píxeles: sus bordes son perfectamente nítidos a cualquier zoom, ideal para logotipos y formas geométricas limpias.</p><p>Una <strong>máscara de recorte</strong> (<kbd>Ctrl/Cmd + Alt + G</kbd>) hace que una capa solo sea visible dentro del área no transparente de la capa inmediatamente debajo — muy usada para "verter" una textura dentro de un texto.</p><h2><span class="num">04</span>Degradados en máscaras</h2><p>Aplicar la herramienta <strong>Degradado</strong> (<kbd>G</kbd>) directamente sobre una máscara, de blanco a negro, crea una transición suave y natural: es la técnica estándar para fusionar horizontes en un paisaje o combinar dos fotografías.</p>
+
+    <div class="table-scroll"><table class="shortcuts">
+<caption>Atajos de teclado clave</caption>
+<thead><tr><th>Acción</th><th>Windows</th><th>Mac</th></tr></thead>
+<tbody><tr><td>Añadir máscara de capa (revela todo)</td><td class="mono">Clic en icono de máscara</td><td class="mono">Clic en icono de máscara</td></tr>
+<tr><td>Añadir máscara ocultando todo</td><td class="mono">Ctrl + clic en icono</td><td class="mono">Cmd + clic en icono</td></tr>
+<tr><td>Invertir máscara</td><td class="mono">Ctrl + I (con máscara activa)</td><td class="mono">Cmd + I (con máscara activa)</td></tr>
+<tr><td>Alternar color de pincel blanco/negro</td><td class="mono">X</td><td class="mono">X</td></tr>
+<tr><td>Desactivar máscara temporalmente</td><td class="mono">Shift + clic en miniatura</td><td class="mono">Shift + clic en miniatura</td></tr></tbody></table></div>
+
+    <div class="callout callout--tip"><i class="bi bi-lightbulb"></i><div><h5>Piensa en luz, no en borrado</h5><p>En vez de pensar "voy a borrar esta parte", piensa "voy a apagar la luz sobre esta parte": el resultado es el mismo, pero siempre reversible.</p></div></div>
+
+    <div class="callout callout--exercise"><i class="bi bi-flag"></i><div><h5>Ejercicio: fusión de dos paisajes</h5><p><ol style='margin:10px 0 0; padding-left:1.1rem; display:grid; gap:6px;'><li>Coloca dos fotos de paisaje, una encima de la otra, con un horizonte similar.</li><li>Añade una máscara de capa en blanco a la capa superior.</li><li>Con la herramienta Degradado (blanco a negro), arrastra sobre la máscara para fusionar ambas imágenes.</li><li>Repinta con el pincel en zonas puntuales de la máscara para perfeccionar la unión.</li></ol></p></div></div>
+
+    <div class="chapter-pager">
+      <a class="pager-link prev" href="04-capas.html">
+        <span><i class="bi bi-arrow-left"></i> Capítulo 04</span>
+        <strong>Capas y modos de fusión</strong>
+      </a>
+      <a class="pager-link next" href="06-color.html">
+        <span>Capítulo 06 <i class="bi bi-arrow-right"></i></span>
+        <strong>Color, tono y ajustes</strong>
+      </a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span data-year></span> PixelMaestro — Guía independiente para aprender Photoshop. No afiliada a Adobe.</p>
+    <nav class="footer-links">
+      <a href="../index.html">Inicio</a>
+      <a href="../pages/01-introduccion.html">Empezar guía</a>
+      <a href="../pages/recursos.html">Recursos</a>
+    </nav>
+  </div>
+</footer>
+
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/animations.js"></script>
+
+<script src="../js/search.js"></script>
+
+</body>
+</html>
