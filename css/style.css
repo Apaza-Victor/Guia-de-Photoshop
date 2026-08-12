@@ -155,6 +155,7 @@ img, svg{ max-width: 100%; display:block; }
   font-size:1.15rem;
 }
 .topbar .brand small{ display:block; font-family: var(--font-mono); font-size:.62rem; color:var(--text-faint); font-weight:400; letter-spacing:.06em; }
+.topbar .brand .brand-logo{ width:38px; height:38px; border-radius:10px; flex-shrink:0; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
 
 /* ---- Navegación del header ---- */
 .topbar-nav{

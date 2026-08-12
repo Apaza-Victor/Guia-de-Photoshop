@@ -1,4 +1,4 @@
-# PixelMaestro — Guía de Photoshop
+# Guía de Photoshop
 
 Guía web estática, responsive y en español para aprender Photoshop desde cero hasta nivel experto. Incluye 12 capítulos, un glosario A–Z, referencia de atajos de teclado, explicación de iconos y modos, y un directorio con más de 175 recursos gratuitos y open source.
 
