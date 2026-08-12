@@ -1,5 +1,10 @@
 # Guía de Photoshop
 
+![Guía de Photoshop](assets/img/Adobe_Photoshop_CC_icon.svg)
+
+[![GitHub Pages](https://img.shields.io/github/deployments/Apaza-Victor/Guia-de-Photoshop/github-pages?label=GitHub%20Pages&logo=github&color=00E5C7)](https://apaza-victor.github.io/Guia-de-Photoshop/)
+[![Último commit](https://img.shields.io/github/last-commit/Apaza-Victor/Guia-de-Photoshop?label=último%20commit&color=9B7BFF)](https://github.com/Apaza-Victor/Guia-de-Photoshop/commits/main)
+
 Guía web estática, responsive y en español para aprender Photoshop desde cero hasta nivel experto. Incluye 12 capítulos, un glosario A–Z, referencia de atajos de teclado, explicación de iconos y modos, y un directorio con más de 175 recursos gratuitos y open source.
 
 > Proyecto independiente. No está afiliado ni respaldado por Adobe.
@@ -74,6 +79,17 @@ El sitio está publicado con GitHub Pages y se actualiza automáticamente al hac
 ## Contenido de recursos
 
 El directorio `recursos.html` agrupa enlaces externos con licencia marcada: **Open source**, **CC0**, **Gratis**, **Con atribución** y **Poco conocido**. Incluye fotos, vectores, iconos, 3D, texturas, tipografías, mockups, color, vídeo/audio, imágenes PNG, herramientas para quitar fondos, programas y IA gratuita para diseñar.
+
+## Módulos de la guía
+
+| Módulo | Capítulos | Contenido |
+| --- | --- | --- |
+| Fundamentos | 01–02 | Introducción e interfaz |
+| Selección y capas | 03–05 | Selección, capas y máscaras |
+| Color y retoque | 06–07 | Color y retoque |
+| Creación y efectos | 08–09 | Pinceles, texto y filtros |
+| Composición avanzada | 10–11 | Composición y automatización |
+| Nivel experto | 12 | Exportación profesional |
 
 ## Licencia y derechos de autor
 
