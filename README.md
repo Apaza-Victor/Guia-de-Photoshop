@@ -36,12 +36,14 @@ Guia de Photoshop/
 │   ├── glosario.html       # Glosario A–Z
 │   ├── iconos-modo.html    # Iconos y modos de la interfaz
 │   └── recursos.html       # Recursos gratuitos y open source
-├── css/
-│   └── style.css           # Todo el estilo (tema claro/oscuro)
-├── js/
-│   ├── main.js             # Navegación, dropdown y tema
-│   ├── search.js           # Índice y overlay de búsqueda
-│   └── animations.js       # Animaciones de entrada
+├── assets/
+│   ├── css/
+│   │   └── style.css       # Todo el estilo (tema claro/oscuro)
+│   ├── js/
+│   │   ├── main.js         # Navegación, dropdown y tema
+│   │   ├── search.js       # Índice y overlay de búsqueda
+│   │   └── animations.js   # Animaciones de entrada
+│   └── img/                # Imágenes del proyecto
 └── README.md
 ```
 
