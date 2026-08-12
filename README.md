@@ -7,11 +7,11 @@ Guía web estática, responsive y en español para aprender Photoshop desde cero
 ## Características
 
 - **12 capítulos** organizados en módulos: fundamentos, selección y capas, color y retoque, creación y efectos, composición avanzada y nivel experto.
-- **Tema claro/oscuro** con botón en el header (se recuerda tu elección).
+- **Tema claro/oscuro** con botón en el header (se recuerda tu elección) e identidad diferenciada en ambos modos.
 - **Buscador global** en overlay: busca capítulos, términos del glosario y secciones de comandos.
-- **Header fijo** con navegación centrada: logo a la izquierda, acciones a la derecha.
+- **Header fijo** con el logo oficial de Photoshop: navegación centrada, logo a la izquierda y acciones a la derecha.
 - **Navegación entre capítulos** con pager compacto (Anterior / Siguiente).
-- **Páginas de referencia**: `comandos.html` (100+ atajos), `glosario.html` (A–Z), `iconos-modo.html` (modos y conmutadores) y `recursos.html` (directorio de recursos).
+- **Páginas de referencia**: `comandos.html` (100+ atajos, combos pro y tips), `glosario.html` (A–Z), `iconos-modo.html` (modos y conmutadores) y `recursos.html` (directorio con 175+ enlaces).
 - Animaciones de entrada con [anime.js](https://animejs.com/).
 
 ## Estructura
@@ -43,7 +43,9 @@ Guia de Photoshop/
 │   │   ├── main.js         # Navegación, dropdown y tema
 │   │   ├── search.js       # Índice y overlay de búsqueda
 │   │   └── animations.js   # Animaciones de entrada
-│   └── img/                # Imágenes del proyecto
+│   └── img/
+│       ├── Adobe_Photoshop_CC_icon.svg  # Logo oficial (header y favicon)
+│       └── .gitkeep
 └── README.md
 ```
 
@@ -54,6 +56,13 @@ No necesita compilación ni servidor: abre `index.html` en cualquier navegador m
 ```powershell
 Start-Process index.html
 ```
+
+## Publicación
+
+El sitio está publicado con GitHub Pages y se actualiza automáticamente al hacer push a `main`:
+
+- **Sitio en vivo**: https://apaza-victor.github.io/Guia-de-Photoshop/
+- **Repositorio**: https://github.com/Apaza-Victor/Guia-de-Photoshop
 
 ## Tecnología
 
