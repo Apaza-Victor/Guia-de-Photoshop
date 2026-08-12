@@ -64,6 +64,10 @@ Start-Process index.html
 
 El directorio `recursos.html` agrupa enlaces externos con licencia marcada: **Open source**, **CC0**, **Gratis**, **Con atribución** y **Poco conocido**. Incluye fotos, vectores, iconos, 3D, texturas, tipografías, mockups, color, vídeo/audio, imágenes PNG, herramientas para quitar fondos, programas y IA gratuita para diseñar.
 
-## Licencia
+## Licencia y derechos de autor
 
-Contenido educativo de uso libre. Los enlaces, iconos y marcas citadas pertenecen a sus respectivos autores. Este proyecto no redistribuye contenido de Adobe.
+**© 2026 Víctor Hugo Apaza. Todos los derechos reservados.**
+
+Esta guía es una obra original de Víctor Hugo Apaza. Puedes usar el contenido con fines educativos y personales, citando la autoría; queda prohibida su redistribución o uso comercial sin autorización previa.
+
+Los enlaces, iconos y marcas citadas (incluida la marca Adobe) pertenecen a sus respectivos autores. Este proyecto no redistribuye contenido de Adobe.
