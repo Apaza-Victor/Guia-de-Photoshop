@@ -16,7 +16,7 @@ Guía web estática, responsive y en español para aprender Photoshop desde cero
 - **Buscador global** en overlay: busca capítulos, términos del glosario y secciones de comandos.
 - **Header fijo** con el logo oficial de Photoshop: navegación centrada, logo a la izquierda y acciones a la derecha.
 - **Navegación entre capítulos** con pager compacto (Anterior / Siguiente).
-- **Páginas de referencia**: `comandos.html` (100+ atajos, combos pro y tips), `glosario.html` (A–Z), `iconos-modo.html` (modos y conmutadores) y `recursos.html` (directorio con 175+ enlaces).
+- **Páginas de referencia**: `comandos.html` (100+ atajos, combos pro y tips), `glosario.html` (A–Z), `iconos-modo.html` (modos y conmutadores), `herramientas.html` (todas las herramientas por grupo y tecla) y `recursos.html` (directorio con 175+ enlaces).
 - Animaciones de entrada con [anime.js](https://animejs.com/).
 
 ## Estructura
@@ -24,6 +24,9 @@ Guía web estática, responsive y en español para aprender Photoshop desde cero
 ```
 Guia de Photoshop/
 ├── index.html              # Inicio y mapa de la guía
+├── 404.html                # Página de error 404
+├── robots.txt              # Permisos para buscadores
+├── sitemap.xml             # Sitemap para buscadores
 ├── pages/                  # Capítulos y páginas de referencia
 │   ├── 01-introduccion.html
 │   ├── 02-interfaz.html
@@ -40,6 +43,7 @@ Guia de Photoshop/
 │   ├── comandos.html       # Atajos de teclado y tips
 │   ├── glosario.html       # Glosario A–Z
 │   ├── iconos-modo.html    # Iconos y modos de la interfaz
+│   ├── herramientas.html   # Todas las herramientas y teclas
 │   └── recursos.html       # Recursos gratuitos y open source
 ├── assets/
 │   ├── css/

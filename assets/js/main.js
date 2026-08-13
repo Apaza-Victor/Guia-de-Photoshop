@@ -100,4 +100,22 @@
   // ---- Año en footer ----
   var yearEl = document.querySelector("[data-year]");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // ---- Botón "volver arriba" (fijo, inferior derecha) ----
+  var toTop = document.createElement("button");
+  toTop.type = "button";
+  toTop.className = "to-top";
+  toTop.setAttribute("aria-label", "Volver al inicio de la página");
+  toTop.innerHTML = '<i class="bi bi-arrow-up" aria-hidden="true"></i>';
+  document.body.appendChild(toTop);
+
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function updateToTop() {
+    toTop.classList.toggle("is-visible", window.scrollY > 300);
+  }
+  document.addEventListener("scroll", updateToTop, { passive: true });
+  updateToTop();
+  toTop.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+  });
 })();

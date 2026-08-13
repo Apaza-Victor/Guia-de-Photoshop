@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Página no encontrada · Guía de Photoshop</title>
+<meta name="description" content="La página que buscas no existe o fue movida. Regresa al inicio de la Guía de Photoshop.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/img/Adobe_Photoshop_CC_icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="topbar__main">
+    <a class="brand" href="index.html" style="text-decoration:none">
+      <img class="brand-logo" src="assets/img/Adobe_Photoshop_CC_icon.svg" alt="Logo de Photoshop">
+      <span>Guía de Photoshop</span>
+    </a>
+  </div>
+  <nav class="topbar-nav" aria-label="Navegación de la guía"><a href="index.html">Inicio</a><div class="topbar-dd"><button class="topbar-dd__btn" type="button" data-dd-toggle aria-expanded="false" aria-haspopup="true">Módulos <i class="bi bi-chevron-down"></i></button><div class="topbar-dd__menu"><a href="pages/01-introduccion.html" data-caps="01,02"><span class="n">01–02</span>Fundamentos</a><a href="pages/03-seleccion.html" data-caps="03,04,05"><span class="n">03–05</span>Selección y capas</a><a href="pages/06-color.html" data-caps="06,07"><span class="n">06–07</span>Color y retoque</a><a href="pages/08-pinceles-texto.html" data-caps="08,09"><span class="n">08–09</span>Creación y efectos</a><a href="pages/10-composicion.html" data-caps="10,11"><span class="n">10–11</span>Composición avanzada</a><a href="pages/12-exportacion.html" data-caps="12"><span class="n">12</span>Nivel experto</a></div></div><a href="pages/glosario.html">Glosario</a><a href="pages/comandos.html">Comandos</a><a href="pages/iconos-modo.html">Modos</a><a href="pages/herramientas.html">Herramientas</a><a href="pages/recursos.html">Recursos</a></nav>
+  <div class="topbar-actions">
+    <button class="theme-toggle icon-btn" type="button" data-theme-toggle aria-label="Cambiar a modo claro" aria-pressed="false"><i class="bi bi-sun"></i><i class="bi bi-moon"></i></button>
+    <button class="topbar-search icon-btn" data-search-open aria-label="Buscar en la guía"><i class="bi bi-search"></i></button>
+  </div>
+</header>
+
+<div class="search-overlay" id="search-overlay" aria-hidden="true">
+  <div class="search-overlay__box">
+    <div class="search-overlay__field">
+      <i class="bi bi-search"></i>
+      <input type="search" id="search-input" placeholder="Buscar capítulos, glosario y comandos…" autocomplete="off">
+      <button class="search-overlay__close" data-search-close aria-label="Cerrar búsqueda"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="search-overlay__results" id="search-results"></ul>
+    <p class="search-overlay__empty" id="search-empty">Escribe para buscar capítulos, conceptos, glosario y comandos…</p>
+    <p class="search-overlay__hint">Teclas: &#8593; &#8595; navegar · Enter abrir · Esc cerrar</p>
+  </div>
+</div>
+
+<div class="app-shell">
+<div class="main-col">
+<main id="contenido">
+
+<section class="section" style="border-bottom:none;">
+  <div class="container" style="text-align:center; padding:72px 0;" data-reveal>
+    <span class="eyebrow"><i class="bi bi-layers-half"></i> Error 404</span>
+    <h1 class="h-display" style="font-size:clamp(3rem,10vw,6rem); color:var(--accent); margin:16px 0 8px;">404</h1>
+    <h2 class="h-lg">Esta capa no existe</h2>
+    <p class="lead" style="margin:12px auto 26px; max-width:52ch;">La página que buscas fue movida o nunca existió. Vuelve al inicio o usa el buscador para encontrar capítulos, términos del glosario y comandos.</p>
+    <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+      <a class="btn btn-primary" href="index.html"><i class="bi bi-house"></i> Volver al inicio</a>
+      <a class="btn btn-ghost" href="pages/01-introduccion.html"><i class="bi bi-rocket-takeoff"></i> Empezar la guía</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span data-year></span> Víctor Hugo Apaza · Guía de Photoshop — Guía independiente para aprender Photoshop. No afiliada a Adobe.</p>
+    <nav class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="pages/01-introduccion.html">Empezar guía</a>
+      <a href="pages/recursos.html">Recursos</a>
+    </nav>
+  </div>
+</footer>
+
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+
+<script src="assets/js/search.js"></script>
+
+</body>
+</html>
